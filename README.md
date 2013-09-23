@@ -11,7 +11,7 @@ plugins, by allowing event manipulation.
 
 In addition to the very rich API exposed by riemann, a few
 collectd specific functions are also available and documented
-[below](#API).
+[below](#api).
 
 ### Building
 
