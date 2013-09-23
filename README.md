@@ -1,6 +1,8 @@
 collmann: riemann event processing inside collectd
 --------------------------------------------------
 
+![xzibit](http://i.imgur.com/1fF8l0S.jpg)
+
 collmann is a collectd plugin relying on collectd's
 java support which embeds a [riemann](http://riemann.io)
 event processor within collectd.
