@@ -1,0 +1,21 @@
+Hostname    "yourname"
+
+LoadPlugin logfile
+LoadPlugin cpu
+LoadPlugin load
+LoadPlugin java
+
+<Plugin logfile>
+        File STDOUT
+        Timestamp true
+        PrintSeverity false
+</Plugin>
+
+<Plugin java>
+        JVMArg     "-Dlog4j.configuration=file:///path/to/collmann/resources/log4j.properties"
+        JVMArg     "-Djava.class.path=/path/to/collmann/target/collmann-0.1.0-standalone.jar"
+        LoadPlugin "io.exo.collmann.core"
+       <Plugin "riemann">
+          LoadConfig "/path/to/collmann/doc/collectd.clj"
+       </Plugin>
+</Plugin>
